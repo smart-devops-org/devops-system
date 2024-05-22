@@ -1,0 +1,12 @@
+adminUser: admin
+adminPassword: strongpassword
+
+service:
+  enabled: true
+  type: NodePort
+
+server:
+  root_url: grafana.smartseo.kr
+  auth.anonymous:
+    enabled: true
+    org_name: Main Org.

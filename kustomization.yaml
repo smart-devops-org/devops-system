@@ -1,0 +1,9 @@
+kind: Kustomization
+namespace: system
+helmCharts:
+  - name: grafana
+    releaseName: grafana
+    repo: https://grafana.github.io/helm-charts
+    version: 7.3.9
+    namespace: system
+    valuesFile: values.yaml
