@@ -1,0 +1,23 @@
+auth:
+  enabled: true
+  rootPassword: "root-password"
+
+master:
+  persistence:
+    storageClass: "ebs-sc"
+    size: 4Gi
+  service:
+    type: NodePort
+
+replica:
+  replicas: 1
+  persistence:
+    storageClass: "ebs-sc"
+    size: 4Gi
+
+metrics:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+  prometheusRule:
+    enabled: true

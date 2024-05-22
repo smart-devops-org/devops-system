@@ -1,0 +1,9 @@
+kind: Kustomization
+namespace: system
+helmCharts:
+  - name: redis
+    releaseName: redis
+    repo: https://charts.bitnami.com/bitnami
+    version: 10.1.1
+    namespace: system
+    valuesFile: values.yaml
