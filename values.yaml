@@ -1,3 +1,8 @@
+auth:
+  enabled: true
+  rootUser: root
+  rootPassword: "root"
+
 service:
   type: NodePort
 
@@ -8,6 +13,7 @@ persistence:
   size: "8Gi"
 
 metrics:
+  enabled: true
   serviceMonitor:
     enabled: true
   prometheusRule:
