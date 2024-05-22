@@ -1,0 +1,16 @@
+auth:
+  enabled: true
+  rootPassword: "root-password"
+
+primary:
+  persistence:
+    storageClass: "ebs-sc"
+  service:
+    type: NodePort
+
+metrics:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+  prometheusRule:
+    enabled: true
