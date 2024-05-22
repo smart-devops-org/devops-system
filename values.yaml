@@ -6,3 +6,9 @@ persistence:
   storageClass: "ebs-sc"
   accessMode: "ReadWriteOnce"
   size: "8Gi"
+
+metrics:
+  serviceMonitor:
+    enabled: true
+  prometheusRule:
+    enabled: true
