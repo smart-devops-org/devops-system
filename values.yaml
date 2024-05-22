@@ -1,0 +1,8 @@
+service:
+  type: NodePort
+
+persistence:
+  enabled: true
+  storageClass: "ebs-sc"
+  accessMode: "ReadWriteOnce"
+  size: "8Gi"
