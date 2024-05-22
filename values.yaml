@@ -10,7 +10,7 @@ master:
     type: NodePort
 
 replica:
-  replicas: 1
+  replicaCount: 1
   persistence:
     storageClass: "ebs-sc"
     size: 4Gi
