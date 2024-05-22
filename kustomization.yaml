@@ -6,3 +6,4 @@ helmCharts:
     repo: https://prometheus-community.github.io/helm-charts
     version: 25.19.1
     namespace: system
+    valuesFile: values.yaml
