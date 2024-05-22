@@ -1,9 +1,12 @@
 operator:
   enabled: true
+  service:
+    type: NodePort
 
 prometheus:
   enabled: true
   service:
     type: NodePort
+
 alertmanager:
   enabled: false
