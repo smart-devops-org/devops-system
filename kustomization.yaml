@@ -1,8 +1,8 @@
 kind: Kustomization
-namespace: monitoring
+namespace: system
 helmCharts:
   - name: prometheus
     releaseName: prometheus
     repo: https://prometheus-community.github.io/helm-charts
     version: 25.19.1
-    namespace: monitoring
+    namespace: system
