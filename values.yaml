@@ -2,7 +2,7 @@ operator:
   enabled: true
   service:
     type: NodePort
-
+    nodePort: 30080
 prometheus:
   enabled: true
   service:
