@@ -1,0 +1,9 @@
+kind: Kustomization
+namespace: system
+helmCharts:
+  - name: elasticsearch
+    releaseName: elasticsearch
+    repo: https://charts.bitnami.com/bitnami
+    version: 19.9.5
+    namespace: system
+    valuesFile: values.yaml

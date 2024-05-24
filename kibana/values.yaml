@@ -1,0 +1,17 @@
+persistence:
+  storageClass: "ebs-sc"
+  size: 4Gi
+
+service:
+  type: NodePort
+
+metrics:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+  prometheusRule:
+    enabled: true
+
+elasticsearch:
+  hosts:
+    - elasticsearch.system.svc.cluster.local

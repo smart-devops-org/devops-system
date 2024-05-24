@@ -1,9 +1,9 @@
 kind: Kustomization
 namespace: system
 helmCharts:
-  - name: keycloak
-    releaseName: keycloak
+  - name: kibana
+    releaseName: kibana
     repo: https://charts.bitnami.com/bitnami
-    version: 21.0.2
+    version: 10.4.1
     namespace: system
     valuesFile: values.yaml
