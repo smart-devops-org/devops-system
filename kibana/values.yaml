@@ -1,6 +1,8 @@
-# persistence:
-#   storageClass: "ebs-sc"
-#   size: 4Gi
+replicaCount: 1
+
+persistence:
+  storageClass: "ebs-sc"
+  size: 4Gi
 
 service:
   type: NodePort
