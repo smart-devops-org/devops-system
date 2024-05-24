@@ -1,7 +1,7 @@
 global:
   storageClass: "ebs-sc"
   size: "4Gi"
-  postgresql:
+  auth:
     postgresPassword: "password"
     username: "admin"
     password: "password"
