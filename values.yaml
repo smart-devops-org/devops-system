@@ -1,13 +1,15 @@
 operator:
   enabled: true
-  service:
-    type: NodePort
-    nodePort: 30080
+
 prometheus:
   enabled: true
   service:
     type: NodePort
-    nodePort: 30090
-    clusterIP: None
+  persistence:
+    enabled: true
+    storageClass: "ebs-sc"
+    size: 8Gi
+  serviceMonitor:
+    enabled: true
 alertmanager:
   enabled: false

@@ -1,9 +1,9 @@
 kind: Kustomization
 namespace: system
 helmCharts:
-  - name: prometheus
-    releaseName: prometheus
-    repo: https://prometheus-community.github.io/helm-charts
-    version: 25.19.1
+  - name: kube-prometheus
+    releaseName: kube-prometheus
+    repo: https://github.com/bitnami/charts
+    version: 8.14.2
     namespace: system
     valuesFile: values.yaml
