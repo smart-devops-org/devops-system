@@ -12,6 +12,9 @@ metrics:
   prometheusRule:
     enabled: true
 
+postgresql:
+  enabled: false
+
 externalDatabase:
   host: "postgresql.system.svc.cluster.local"
   port: 5432
