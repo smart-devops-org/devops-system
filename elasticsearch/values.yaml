@@ -1,9 +1,23 @@
-auth:
-  adminUser: admin
-  adminPassword: "password"
-
 service:
   type: NodePort
+
+master:
+  replicaCount: 1
+  persistence:
+    storageClass: "ebs-sc"
+    size: 4Gi
+
+data:
+  replicaCount: 2
+  persistence:
+    storageClass: "ebs-sc"
+    size: 4Gi
+
+coordinating:
+  replicaCount: 0
+
+ingest:
+  replicaCount: 0
 
 metrics:
   enabled: true
