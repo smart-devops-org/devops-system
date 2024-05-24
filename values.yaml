@@ -2,7 +2,7 @@ auth:
   adminUser: admin
   adminPassword: "password"
 
-replicaCount: 0
+replicaCount: 1
 
 service:
   type: NodePort
