@@ -1,19 +1,18 @@
-auth:
-  enabled: true
-  rootPassword: "root-password"
+global:
+  storageClass: "ebs-sc"
+  size: "4Gi"
+  postgresql:
+    postgresPassword: "password"
+    username: "admin"
+    password: "password"
+    database: "test"
 
-master:
-  persistence:
-    storageClass: "ebs-sc"
-    size: 4Gi
+primary:
   service:
     type: NodePort
 
-replica:
-  replicaCount: 1
-  persistence:
-    storageClass: "ebs-sc"
-    size: 4Gi
+readReplicas:
+  replicaCount: 0
 
 metrics:
   enabled: true
