@@ -17,4 +17,4 @@ metrics:
 elasticsearch:
   hosts:
     - elasticsearch.system.svc.cluster.local
-  port: "30002"
+  port: "9200"
