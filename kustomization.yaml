@@ -1,9 +1,9 @@
 kind: Kustomization
-namespace: system
+namespace: db
 helmCharts:
   - name: redis
     releaseName: redis
     repo: https://charts.bitnami.com/bitnami
     version: 19.1.2
-    namespace: system
+    namespace: db
     valuesFile: values.yaml
