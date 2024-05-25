@@ -29,7 +29,7 @@ prometheus:
         name: kube-prometheus-prometheus
         port:
           number: 80
-    hosts:
-      - prometheus.smartseo.kr
+    hostname: prometheus.smartseo.kr
+
 alertmanager:
   enabled: false
