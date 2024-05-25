@@ -1,9 +1,9 @@
 kind: Kustomization
-namespace: system
+namespace: logging
 helmCharts:
   - name: kibana
     releaseName: kibana
     repo: https://charts.bitnami.com/bitnami
     version: 10.4.1
-    namespace: system
+    namespace: logging
     valuesFile: values.yaml
