@@ -6,6 +6,11 @@ ingress:
   pathType: ImplementationSpecific
   hostname: elasticsearch.smartseo.kr
   path: /
+  backend:
+    service:
+      name: elasticsearch
+      port:
+        number: 9200
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
