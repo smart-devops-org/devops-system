@@ -29,7 +29,7 @@ ingress:
     alb.ingress.kubernetes.io/load-balancer-name: system-alb
     alb.ingress.kubernetes.io/group.name: "system-alb-group"
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80,"HTTPS":443}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:123456789012:certificate/12345678-1234-1234-1234-123456789012
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:221370546661:certificate/6f73fffc-dc0f-4c85-a295-147c64be7fcb
     alb.ingress.kubernetes.io/healthcheck-path: /auth/realms/master
     alb.ingress.kubernetes.io/healthcheck-port: "8080"
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
