@@ -1,9 +1,9 @@
 kind: Kustomization
-namespace: system
+namespace: auth
 helmCharts:
   - name: keycloak
     releaseName: keycloak
     repo: https://charts.bitnami.com/bitnami
     version: 21.0.2
-    namespace: system
+    namespace: auth
     valuesFile: values.yaml
