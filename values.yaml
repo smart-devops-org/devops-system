@@ -19,12 +19,12 @@ ingress:
     - grafana.smartseo.kr
   extraPaths:
     - path: /*
-  pathType: Prefix
-  backend:
-    service:
-      name: grafana
-      port:
-        name: 80
+      pathType: Prefix
+      backend:
+        service:
+          name: grafana
+          port:
+            name: 80
 server:
   root_url: grafana.smartseo.kr
   auth.anonymous:
