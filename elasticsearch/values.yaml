@@ -3,6 +3,7 @@ service:
 
 ingress:
   enabled: true
+  ingressClassName: alb
   pathType: ImplementationSpecific
   hostname: elasticsearch.smartseo.kr
   path: /
