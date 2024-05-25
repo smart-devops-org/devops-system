@@ -1,3 +1,6 @@
+image:
+  debug: true
+
 auth:
   adminUser: admin
   adminPassword: "password"
@@ -50,3 +53,7 @@ externalDatabase:
   user: admin
   database: test
   password: "password"
+
+logging:
+  output: default
+  level: DEBUG
