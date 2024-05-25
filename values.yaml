@@ -17,6 +17,11 @@ ingress:
   pathType: ImplementationSpecific
   hostname: keycloak.smartseo.kr
   path: /
+  backend:
+    service:
+      name: keycloak
+      port:
+        number: 8080
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
