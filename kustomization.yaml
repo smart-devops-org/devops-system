@@ -1,9 +1,9 @@
 kind: Kustomization
-namespace: system
+namespace: monitoring
 helmCharts:
   - name: kube-prometheus
     releaseName: kube-prometheus
     repo: https://charts.bitnami.com/bitnami
     version: 8.14.2
-    namespace: system
+    namespace: monitoring
     valuesFile: values.yaml

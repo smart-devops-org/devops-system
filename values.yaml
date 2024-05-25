@@ -11,5 +11,25 @@ prometheus:
     size: 8Gi
   serviceMonitor:
     enabled: true
+  ingress:
+    enabled: true
+    ingressClassName: alb
+    annotations:
+      alb.ingress.kubernetes.io/scheme: internet-facing
+      alb.ingress.kubernetes.io/target-type: ip
+      alb.ingress.kubernetes.io/load-balancer-name: system-alb
+      alb.ingress.kubernetes.io/group.name: "system-alb-group"
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:221370546661:certificate/6f73fffc-dc0f-4c85-a295-147c64be7fcb
+      alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+      alb.ingress.kubernetes.io/ssl-redirect: "443"
+    path: /
+    pathType: Prefix
+    backend:
+      service:
+        name: kube-prometheus-prometheus
+        port:
+          number: 80
+    hosts:
+      - prometheus.smartseo.kr
 alertmanager:
   enabled: false
