@@ -1,9 +1,9 @@
 kind: Kustomization
-namespace: system
+namespace: logging
 helmCharts:
   - name: elasticsearch
     releaseName: elasticsearch
     repo: https://charts.bitnami.com/bitnami
     version: 19.9.5
-    namespace: system
+    namespace: logging
     valuesFile: values.yaml
