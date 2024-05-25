@@ -24,7 +24,7 @@ ingress:
         service:
           name: grafana
           port:
-            name: 80
+            number: 80
 server:
   root_url: grafana.smartseo.kr
   auth.anonymous:
