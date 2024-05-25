@@ -1,9 +1,9 @@
 kind: Kustomization
-namespace: system
+namespace: db
 helmCharts:
   - name: mongodb
     releaseName: mongodb
     repo: https://charts.bitnami.com/bitnami
     version: 15.1.4
-    namespace: system
+    namespace: db
     valuesFile: values.yaml
