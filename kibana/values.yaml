@@ -10,7 +10,7 @@ service:
 ingress:
   enabled: true
   ingressClassName: alb
-  pathType: ImplementationSpecific
+  pathType: Prefix
   hostname: kibana.smartseo.kr
   path: /
   backend:
