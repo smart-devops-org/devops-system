@@ -34,7 +34,6 @@ ingress:
     alb.ingress.kubernetes.io/proxy-protocol: "*"
     alb.ingress.kubernetes.io/cross-zone-load-balancing-enabled: "true"
     alb.ingress.kubernetes.io/ssl-ports: "https"
-    alb.ingress.kubernetes.io/ssl-cert: "arn:aws:acm:us-east-1:123456789:certificate/xxxxxxxxxxxxxx"
     alb.ingress.kubernetes.io/additional-resource-tags: "type=external"
   ## @param ingress.apiVersion Force Ingress API ve
 tls:
