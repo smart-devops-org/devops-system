@@ -16,7 +16,7 @@ service:
 
 extraEnvVars:
   - name: KEYCLOAK_PROXY_ADDRESS_FORWARDING
-    value: true
+    value: "true"
   - name: KEYCLOAK_FRONTEND_URL
     value: "https://keycloak.smartseo.kr"
 
