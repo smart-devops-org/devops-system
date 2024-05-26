@@ -20,6 +20,8 @@ extraEnvVars:
   - name: KEYCLOAK_FRONTEND_URL
     value: "https://keycloak.smartseo.kr"
 
+production: true
+
 ingress:
   enabled: true
   ingressClassName: "alb"
@@ -39,9 +41,10 @@ ingress:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:221370546661:certificate/6f73fffc-dc0f-4c85-a295-147c64be7fcb
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-  tls: true
-  selfSigned: true
-  servicePort: https
+
+tls: true
+selfSigned: true
+servicePort: https
 
 # tls:
 #   enabled: true
