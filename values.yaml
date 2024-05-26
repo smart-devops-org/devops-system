@@ -20,7 +20,7 @@ extraEnvVars:
   - name: KEYCLOAK_FRONTEND_URL
     value: "https://keycloak.smartseo.kr"
 
-production: true
+# production: true
 
 ingress:
   enabled: true
