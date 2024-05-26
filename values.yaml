@@ -32,9 +32,8 @@ ingress:
     service:
       name: keycloak
       port:
-        number: 443
+        number: 8080
   annotations:
-    cert-manager.io/issuer: "keycloak-issue" #use specific name of issuer
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/load-balancer-name: system-alb
