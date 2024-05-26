@@ -24,7 +24,7 @@ ingress:
     service:
       name: keycloak
       port:
-        number: 80
+        number: 443
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
