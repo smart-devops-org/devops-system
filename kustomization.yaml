@@ -4,6 +4,6 @@ helmCharts:
   - name: keycloak
     releaseName: keycloak
     repo: https://charts.bitnami.com/bitnami
-    version: 20.0.0
+    version: 21.0.2
     namespace: auth
     valuesFile: values.yaml
