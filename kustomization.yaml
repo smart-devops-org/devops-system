@@ -1,9 +1,0 @@
-kind: Kustomization
-namespace: db
-helmCharts:
-  - name: postgresql
-    releaseName: postgresql
-    repo: https://charts.bitnami.com/bitnami
-    version: 15.4.0
-    namespace: db
-    valuesFile: values.yaml
