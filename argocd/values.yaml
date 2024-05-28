@@ -1,0 +1,7 @@
+server:
+  service:
+    type: NodePort
+
+configs:
+  cm:
+    kustomize.buildOptions: --enable-helm
