@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: kiali-ingress
+  name: prometheus-ingress
   namespace: istio-system
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
@@ -14,13 +14,13 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: kiali.smartseo.kr
+    - host: prometheus.smartseo.kr
       http:
         paths:
           - pathType: Prefix
             path: /
             backend:
               service:
-                name: kiali
+                name: prometheus
                 port:
-                  number: 20001
+                  number: 9090
