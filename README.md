@@ -107,6 +107,7 @@
 - Amazon EKS에서는 Amazon VPC 통합 네트워킹을 지원하고 있어 파드에서 VPC 내부 주소 대역을 사용할 수 있고 클러스터 외부와의 통신이 가능하고 심리스(Seamless)하게 구현할 수 있다.
 
 cf) 심리스(Seamless): 서비스 접근을 단순하게 하는 것 혹은 복잡한 기술이나 기능을 설명하지 않아도 서비스 기능을 직관적으로 구현하는 뜻
+
 ![image](https://github.com/smart-devops-org/devops-system/assets/46982752/cdffe545-9f2b-471e-b90f-3a9a732f3d49)
 
 ### ELB와의 연계
