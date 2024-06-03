@@ -1,0 +1,16 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: my-cronjob
+  namespace: test
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: my-container
+              image: nginx:latest
+              command: ["echo", "Hello, World!"]
+          restartPolicy: OnFailure

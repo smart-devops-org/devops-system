@@ -1,0 +1,47 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: test-a-role
+  namespace: default
+rules:
+  - apiGroups: [""]
+    resources:
+      [
+        "pods",
+        "pods/log",
+        "pods/exec",
+        "pods/portforward",
+        "pods/proxy",
+        "pods/status",
+        "services",
+        "endpoints",
+        "events",
+        "configmaps",
+        "secrets",
+        "namespaces",
+        "serviceaccounts",
+        "roles",
+        "rolebindings",
+        "clusterroles",
+        "clusterrolebindings",
+        "persistentvolumeclaims",
+        "persistentvolumes",
+        "storageclasses",
+        "resourcequotas",
+        "limitranges",
+        "podsecuritypolicies",
+        "networkpolicies",
+        "ingresses",
+        "horizontalpodautoscalers",
+        "cronjobs",
+        "jobs",
+        "deployments",
+        "replicasets",
+        "statefulsets",
+        "daemonsets",
+        "replicationcontrollers",
+        "services/proxy",
+        "services/status",
+        "services/finalizers",
+      ]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
